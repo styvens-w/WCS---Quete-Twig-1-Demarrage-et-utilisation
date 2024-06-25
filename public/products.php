@@ -5,11 +5,11 @@ use Twig\Error\SyntaxError;
 
 require_once __DIR__ . '/../config/twig.php';
 
-$name = 'Wilder';
+$products = ['guitare', 'bass', 'banjo', 'cithare', 'lyre', 'harpe'];
 
 try {
 
-    echo $twig->render('home.html.twig', ['name' => $name]);
+    echo $twig->render('products.html.twig', compact('products'));
 
 } catch (LoaderError|RuntimeError|SyntaxError $e) {
 
