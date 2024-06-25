@@ -1,4 +1,8 @@
-{% extends 'base.html.twig' %}
+{% extends 'layout.html.twig' %}
+
+{% block title %}
+    {{ parent() }} - Accueil
+{% endblock %}
 
 {% block body %}
     <h1>Hello {{ name }} !</h1>
